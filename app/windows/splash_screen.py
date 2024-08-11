@@ -89,8 +89,8 @@ class SplashScreen:
             new_window.mainloop()
 
 
-# Create the main window with the splash screen
-if __name__ == "__main__":
-    root = tk.Tk()
-    splash = SplashScreen(root)
-    root.mainloop()
+# # Create the main window with the splash screen
+# if __name__ == "__main__":
+#     root = tk.Tk()
+#     splash = SplashScreen(root)
+#     root.mainloop()

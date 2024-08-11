@@ -214,8 +214,8 @@ class CreateAccountScreen:
         self.master.Frame_LabelFrame_innerFrame_Frame8.grid(row=7, column=0, sticky='nsew')
 
 
-# Run the application
-if __name__ == "__main__":
-    root = tk.Tk()
-    CreateAccountScreen(root)
-    root.mainloop()
+# # Run the application
+# if __name__ == "__main__":
+#     root = tk.Tk()
+#     CreateAccountScreen(root)
+#     root.mainloop()
