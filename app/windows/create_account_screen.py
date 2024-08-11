@@ -46,34 +46,6 @@ class CreateAccountScreen:
         # Set the geometry of the window
         self.master.geometry(f"{window_width}x{window_height}+{position_x}+{position_y}")
 
-        # # Configure rows and coloumns of window
-        # self.master.columnconfigure(0, weight=1)
-        # self.master.columnconfigure(1, weight=1)
-        # self.master.columnconfigure(2, weight=1)
-        # self.master.rowconfigure(0, weight=3)
-        # self.master.rowconfigure(1, weight=3)
-        # self.master.rowconfigure(2, weight=1)
-        #
-        # # Apply custom styles
-        # style = ttk.Style()
-        # # Configure a new style for ttk.Frame
-        # style.configure('TFrame', background='orange', height=window_height//3, width=window_width//2)
-        #
-        # # Frame inside lable frame
-        # self.frame = ttk.Frame(self.master, style='TFrame')
-        # self.frame.grid(row=0, column=0, columnspan=2)
-
-
-        # # Setting up label frame
-        # self.label_frame = ttk.LabelFrame(self.master, text='User Information', height=window_height//3, width=window_width//2)
-        # self.label_frame.grid(row=0, column=0, columnspan=2)
-        #
-        #
-        # # Add label
-        # ttk.Label(self.frame, text='Hello').pack()
-
-
-
         # Color for text and background
         self.master.foreground_color = 'black'
         self.master.background_color = 'white'
@@ -91,18 +63,6 @@ class CreateAccountScreen:
 
         # Stop the frame from propagating the widget to be shrink or fit
         self.master.Frame.pack_propagate(False)
-
-        # style = ttk.Style()
-        # style.theme_use('clam')  # You can experiment with other themes like 'alt', 'default', etc.
-        # style = ttk.Style()
-        # style.configure('TLabelframe.Label', font=('helvetica', 12, 'bold'), padding=(10,5))  # Change the font size here
-        #
-        # # # self.master.LabelFrame = ttk.LabelFrame(self.master.Frame,
-        # # #                                                      text = 'Create User Account',
-        # # #                                                     height = window_height-40,
-        # # #                                                     width = window_width-80)
-        # #
-        # #                                     )
 
         # Label Frame on Frame
         self.master.Frame_LabelFrame = tk.LabelFrame(self.master.Frame,
@@ -159,9 +119,7 @@ class CreateAccountScreen:
         )
         self.master.Frame_LabelFrame_innerFrame_Frame1_Label1.grid(row=0, column=0, sticky='nw', padx=2,
                                                                                 pady=2)
-        # # self.master.Frame_LabelFrame_innerFrame_Frame1_Label1.pack(side=tk.LEFT)
-        # #
-        # # #
+        self.master.Frame_LabelFrame_innerFrame_Frame1_Label1.pack(side=tk.LEFT)
         self.master.Frame_LabelFrame_innerFrame_Frame1_Entry = ttk.Entry(
             self.master.Frame_LabelFrame_innerFrame_Frame1,
             text='Name',
@@ -169,15 +127,7 @@ class CreateAccountScreen:
         )
         self.master.Frame_LabelFrame_innerFrame_Frame1_Entry.grid(row=0, column=1, sticky=tk.NW, padx=2,
                                                                                pady=2)
-        # # self.master.Frame_LabelFrame_innerFrame_Frame1_Entry.pack(side=tk.LEFT)
-        # #
-        # self.master.Frame_LabelFrame_innerFrame_Frame1_Label2 = ttk.Label(
-        #     self.master.Frame_LabelFrame_innerFrame_Frame1,
-        #     text = '',
-        #     font = self.master.font
-        # )
-        # self.master.Frame_LabelFrame_innerFrame_Frame1_Label2.grid(row=1, column=1, sticky='n', padx=6,pady=2)
-        # self.master.Frame_LabelFrame_innerFrame_Frame1_Label2.pack(side=tk.LEFT)
+        self.master.Frame_LabelFrame_innerFrame_Frame1_Entry.pack(side=tk.LEFT)
         self.master.Frame_LabelFrame_innerFrame_Frame2 = tk.Frame(
             self.master.Frame_LabelFrame_innerFrame,
             background='red')
